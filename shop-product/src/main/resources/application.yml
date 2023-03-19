@@ -12,6 +12,11 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+    sentinel:
+      eager: true
+      transport:
+        dashboard: localhost:8080
+      web-context-unify: false
   jap:
     hibernate:
       hb2ddl:

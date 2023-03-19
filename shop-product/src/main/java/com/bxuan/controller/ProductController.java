@@ -34,4 +34,13 @@ public class ProductController {
         return "添加成功";
     }
 
+    @GetMapping("/product/message01")
+    public String message01(){
+        return productService.message() + "01";
+    }
+    @GetMapping("/product/message")
+    public String message(){
+        return productService.message();
+    }
+
 }

@@ -3,19 +3,17 @@ package com.bxuan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Author: BXuan
- * @Date: 2023/03/17/ 21:42
+ * @Date: 2023/03/19/ 1:08
  * @description
  */
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
-public class ProductApplication {
+public class ApiGateWayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProductApplication.class, args);
+        SpringApplication.run(ApiGateWayApplication.class, args);
     }
 }

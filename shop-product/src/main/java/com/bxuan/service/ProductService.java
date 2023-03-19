@@ -13,4 +13,6 @@ public interface ProductService {
     Product findById(Integer pid);
 
     void addProduct(Product product);
+
+    String message();
 }

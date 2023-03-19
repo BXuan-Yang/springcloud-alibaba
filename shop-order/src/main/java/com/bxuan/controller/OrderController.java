@@ -15,6 +15,9 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @Author: BXuan

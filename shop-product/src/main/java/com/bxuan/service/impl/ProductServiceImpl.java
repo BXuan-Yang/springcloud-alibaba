@@ -1,5 +1,6 @@
 package com.bxuan.service.impl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.bxuan.dao.ProductDao;
 import com.bxuan.domain.Product;
 import com.bxuan.service.ProductService;
@@ -26,5 +27,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void addProduct(Product product) {
         productDao.save(product);
+    }
+
+    @Override
+    @SentinelResource("message")
+    public String message() {
+        return "message";
     }
 }
